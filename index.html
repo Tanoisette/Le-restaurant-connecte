@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Le Gourmet</title>
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js" defer></script>
 </head>
 <body>
-<header>
-  <h1>Bienvenue au Restaurant Le Gourmet</h1>
-  <nav>
+<header class="site-header">
+  <div class="nav-bar">
+  <img src="/images/burgerlogo.png" alt="Logo Le Gourmet" class="logo">
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav">
     <ul>
       <li><a href="/index.html">Accueil</a></li>
       <li><a href="/pages/menu.html">Menu</a></li>
@@ -17,7 +22,20 @@
       <li><a href="/pages/contact.html">Réservation</a></li>
     </ul>
   </nav>
+</div>
+
+  <h1>Bienvenue au Restaurant Le Gourmet</h1>
 </header>
+<main>
+  <section class="hero">
+    <h2>Découvrez une expérience culinaire unique</h2>
+    <p>Des plats savoureux préparés avec des ingrédients frais et locaux.</p>
+    <a href="/pages/menu.html" class="btn">Voir le Menu</a>
+  </section>
+  <section class="about">
+    <h2>À propos de nous</h2>
+    <p>GreenBite est né de la passion pour la cuisine végétalienne et le désir de créer des burgers délicieux et respectueux de l'environnement. Nous utilisons uniquement des ingrédients naturels, sans OGM, pour offrir une expérience gustative exceptionnelle.</p>
+  </section>
 <footer>
     <p>© 2026 GreenBite - Tous droits réservés</p>
   <a href="#">Mentions légales</a>

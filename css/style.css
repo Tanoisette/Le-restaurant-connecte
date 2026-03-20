@@ -1,0 +1,179 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== VARIABLES COULEURS BURGER ===== */
+:root {
+  --dark: #1a1a1a;
+  --burger-red: #e74c3c;
+  --burger-yellow: #f1c40f;
+  --burger-green: #2ecc71;
+  --white: #ffffff;
+  --gray: #f5f5f5;
+}
+
+/* ===== BODY ===== */
+body {
+  background: var(--gray);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  text-align: center;
+  background: var(--white);
+}
+
+/* ===== NAVBAR  ===== */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  background: var(--dark);
+  position: sticky;
+  top: 0;
+}
+
+/* LOGO */
+.logo {
+  height: 55px;
+  width: auto;
+}
+
+
+
+/* TITRE HEADER */
+.site-header h1 {
+  padding: 20px;
+  font-size: 2.5rem;
+  color: var(--dark);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('../images/burgerimagefond.png');
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* ===== BOUTON ===== */
+.btn {
+  background: var(--burger-green);
+  color: var(--white);
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #25a25a;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: var(--burger-yellow);
+  text-decoration: none;
+}
+
+
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .plat {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .carousel img {
+    height: 250px;
+  }
+}
+
+
+/* ===== HAMBURGER ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: var(--dark);
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav.active {
+    display: block;
+  }
+}
