@@ -19,5 +19,3 @@
   }
 }
 
-// page 1 affichée par défaut
-window.onload = () => showPage(1);

@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* ===== VARIABLES COULEURS BURGER ===== */
+/* ===== VARIABLES COULEURS SITE BURGER  ===== */
 :root {
   --dark: #1a1a1a;
   --burger-red: #e74c3c;
@@ -69,11 +69,62 @@ nav a:hover {
 
 /* TITRE HEADER */
 .site-header h1 {
-  padding: 20px;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 30px auto;
+  padding: 10px 20px;
+  max-width: 900px;
   color: var(--dark);
+  background: transparent;
+  border-top: 3px solid var(--burger-red);
+  border-bottom: 3px solid var(--burger-red);
+
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
+/* =====  ABOUT ===== */
+.about {
+  padding: 50px;
+  max-width: 700PX;
+  margin: auto;
+}
+
+.about {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 650px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: var(--dark);
+  position: relative;
+}
+
+/* petite ligne élégante sous le titre */
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--burger-red);
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #444;
+}
 /* ===== HERO ===== */
 .hero {
   background: linear-gradient(
@@ -115,12 +166,6 @@ nav a:hover {
 
 .btn:hover {
   background: #25a25a;
-}
-
-/* ===== ABOUT ===== */
-.about {
-  padding: 60px 20px;
-  text-align: center;
 }
 
 /* ===== FOOTER ===== */
