@@ -378,3 +378,20 @@ button:hover {
     display: block;
   }
 }
+
+/* ===== MENTIONS LEGALES ===== */
+.legal {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.legal section {
+  margin-bottom: 30px;
+}
+
+.legal h2 {
+  color: var(--burger-red);
+  margin-bottom: 10px;
+}
