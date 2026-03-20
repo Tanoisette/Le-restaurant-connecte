@@ -354,7 +354,15 @@ button:hover {
 }
 
 /* MOBILE NAV */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
+
   .menu-toggle {
     display: block;
   }
@@ -362,20 +370,21 @@ button:hover {
   nav {
     position: absolute;
     top: 70px;
-    right: 0;
+    left: 0;
     width: 100%;
     background: var(--dark);
     display: none;
+    z-index: 999;
+  }
+
+  nav.active {
+    display: block;
   }
 
   nav ul {
     flex-direction: column;
     text-align: center;
     padding: 20px 0;
-  }
-
-  nav.active {
-    display: block;
   }
 }
 
